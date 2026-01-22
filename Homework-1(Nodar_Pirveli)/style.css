@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght,YOPQ@100..900,300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Kumbh Sans";
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+
+  position: relative;
+  background:
+    radial-gradient(
+      circle at -10% -10%,
+      rgba(255, 255, 255, 0.15),
+      rgba(255, 255, 255, 0.05),
+      transparent 60%
+    ),
+    radial-gradient(
+      circle at 110% 110%,
+      rgba(255, 255, 255, 0.12),
+      rgba(255, 255, 255, 0.04),
+      transparent 65%
+    ),
+    #19a1ae;
+}
+
+.card {
+  width: 350px;
+  height: 374px;
+  background: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.card-header {
+  height: 148px;
+  background-image: url(./assets/Circle.png);
+  background-color: #41d3d7;
+}
+
+.profile-pic {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  overflow: hidden;
+  position: absolute;
+  top: 85px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.profile-pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 70px 0 30px;
+}
+
+.card-body h2 {
+  font-size: 18px;
+  color: #2e3349;
+}
+
+.card-body h2 span {
+  color: #6b7082;
+  font-weight: normal;
+}
+
+.location {
+  margin-top: 8px;
+  color: #6b7082;
+  font-size: 14px;
+}
+
+.social-media {
+  border-top: 1px solid #eee;
+  padding-top: 20px;
+}
+
+.stats {
+  width: 30%;
+  display: inline-block;
+}
+
+.stats h3 {
+  font-size: 18px;
+  color: #2e3349;
+}
+
+.stats p {
+  font-size: 10px;
+  color: #6b7082;
+  margin-top: 5px;
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 350px;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    width: 350px;
+  }
+}
